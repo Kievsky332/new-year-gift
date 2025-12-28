@@ -33,13 +33,13 @@ function bam(){
     });
     function upyat() {
         b += 1;
-        if (b==15){
-            b=0;
-        }
         audio.pause();      
         audio.currentTime = 0;  
         audio.src = a[b];   
-        audio.play();
+        audio.play();       
+        if (b==15){
+            b=0;
+        }
     }
 }
 function ng(){

@@ -32,11 +32,12 @@ function bam(){
         setInterval(upyat, audio.duration * 1000);
     });
     function upyat() {
-        b += 1;
+       
         audio.pause();      
         audio.currentTime = 0;  
         audio.src = a[b];   
-        audio.play();       
+        audio.play(); 
+        b += 1;       
         if (b==15){
             b=0;
         }

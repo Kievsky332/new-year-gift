@@ -17,6 +17,7 @@ shuffle(a);
 let b = 0;
 function bam(){
     let time = document.getElementById('time').value;
+    let trek = document.getElementById('trek');
     var audio = new Audio(a[b]);
     audio.addEventListener('loadedmetadata', function() {
         function vol()
@@ -26,6 +27,7 @@ function bam(){
         }
         setInterval(vol,1);
         console.log(a[b] + " длится " + audio.duration + " секунд.");
+        trek.innerHTML = "Текущий трек: "+a[b]+ " длится " + audio.duration + " секунд."
         audio.play();
         setInterval(upyat, audio.duration * 1000);
     });

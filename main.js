@@ -43,7 +43,7 @@ function bam(){
 function ng(){
     let time = document.getElementById('time').value;
 
-    if (time =="22:50"){
+    if (time =="23:50"){
         document.location.href = 'https://static.1tv.ru/eump/embeds/interactive.html?__paranja=yes&embed=..%2Fembeds%2F1tv_live.html&start=auto&muted=no&titleEnabled=yes&interactive=no'
     }
 }

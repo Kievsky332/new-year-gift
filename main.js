@@ -37,7 +37,6 @@ function bam(){
         audio.currentTime = 0;  
         audio.src = a[b];   
         audio.play();
-        console.log(audio);
     }
 }
 function ng(){

@@ -38,7 +38,7 @@ function bam(){
         audio.src = a[b];   
         audio.play(); 
         b += 1;       
-        if (b==15){
+        if (b==16){
             b=0;
         }
     }

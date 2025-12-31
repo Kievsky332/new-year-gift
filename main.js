@@ -8,7 +8,7 @@ function myCode(){
     const minutes = now.getMinutes().toString().padStart(2, '0');
     const timeHHMM = `${hours}:${minutes}`;
     const myP = document.getElementById('time');
-    myP.value = timeHHMM;
+    //myP.value = timeHHMM;
 }
 const intervalId = setInterval(myCode, 1000);
 
@@ -46,8 +46,8 @@ function bam(){
 function ng(){
     let time = document.getElementById('time').value;
 
-    if (time =="23:50"){
-        document.location.href = 'https://static.1tv.ru/eump/embeds/interactive.html?__paranja=yes&embed=..%2Fembeds%2F1tv_live.html&start=auto&muted=no&titleEnabled=yes&interactive=no'
+    if (time =="23:58"){
+        document.location.href = 'gift.html'
     }
 }
 setInterval(ng,1000)

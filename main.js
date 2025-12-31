@@ -50,5 +50,5 @@ function ng(){
         document.location.href = 'gift.html'
     }
 }
-setInterval(ng,1000)
+setInterval(ng,1000) 
 

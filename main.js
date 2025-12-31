@@ -8,7 +8,7 @@ function myCode(){
     const minutes = now.getMinutes().toString().padStart(2, '0');
     const timeHHMM = `${hours}:${minutes}`;
     const myP = document.getElementById('time');
-    //myP.value = timeHHMM;
+    myP.value = timeHHMM;
 }
 const intervalId = setInterval(myCode, 1000);
 
@@ -46,7 +46,7 @@ function bam(){
 function ng(){
     let time = document.getElementById('time').value;
 
-    if (time =="23:58"){
+    if (time =="23:57"){
         document.location.href = 'gift.html'
     }
 }

@@ -1,8 +1,8 @@
-function shuffle(array) {
+function shuffle(array) { //Рандомизируем
   array.sort(() => Math.random() - 0.5);
   console.log(a);
 }
-function myCode(){
+function myCode(){//пишем какой трек и сколько длится
     const now = new Date();
     const hours = now.getHours().toString().padStart(2, '0');
     const minutes = now.getMinutes().toString().padStart(2, '0');
@@ -12,7 +12,7 @@ function myCode(){
 }
 const intervalId = setInterval(myCode, 1000);
 
-let a = ["1.mp3","2.mp3","3.mp3","4.mp3","5.mp3","6.mp3","7.mp3","8.mp3","9.mp3","10.mp3","11.mp3","12.mp3","13.mp3","14.mp3","15.mp3","16.mp3"];
+let a = ["1.mp3","2.mp3","3.mp3","4.mp3","5.mp3","6.mp3","7.mp3","8.mp3","9.mp3","10.mp3","11.mp3","12.mp3","13.mp3","14.mp3","15.mp3","16.mp3"]; //массив
 shuffle(a);
 let b = 0;
 function bam(){
@@ -31,7 +31,7 @@ function bam(){
         audio.play();
         setInterval(upyat, audio.duration * 1000);
     });
-    function upyat() {
+    function upyat() { //обнуление треков (повтор)
        
         audio.pause();      
         audio.currentTime = 0;  
@@ -43,7 +43,7 @@ function bam(){
         }
     }
 }
-function ng(){
+function ng(){ //делаем переадресацию на обращение
     let time = document.getElementById('time').value;
 
     if (time =="23:57"){
